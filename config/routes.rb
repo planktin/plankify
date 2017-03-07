@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root :to => 'home#index'
-  mount ShopifyApp::Engine, at: '/'
+  mount ShopifyApp::Engine, at: '/shopify'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
