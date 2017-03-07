@@ -1,4 +1,4 @@
-class CartsUpdateJob < ActiveJob::Base
+class ProductsUpdateJob < ActiveJob::Base
   queue_as :default
 
   def perform(*args)
