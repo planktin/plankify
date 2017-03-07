@@ -16,3 +16,11 @@
     <li><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></li>
   <% end %>
 </ul>
+
+<h2>Shops</h2>
+
+<ul>
+  <% @shops.each do |shop| %>
+    <li><%= link_to shop.shopify_domain, "https://#{shop.shopify_domain}/", target: "_top" %></li>
+  <% end %>
+</ul>
