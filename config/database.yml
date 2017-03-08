@@ -80,6 +80,3 @@ test:
 #
 production:
   <<: *default
-  database: plankify_production
-  username: plankify
-  password: <%= ENV.fetch('PLANKIFY_DATABASE_PASSWORD') %>
