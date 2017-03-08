@@ -5,6 +5,9 @@ ShopifyApp.configure do |config|
   config.scope = "read_orders, read_products, write_orders, write_products, read_customers, write_customers"
   config.embedded_app = true
 
+  # Should match Shopify Partner dashboard
+  config.redirect_uri = "https://#{ENV.fetch('APP_SUBDOMAIN')}.herokuapp.com/auth/shopify/callback"
+
   config.webhooks = [
     {topic: "products/update", address: "https://#{ENV.fetch('APP_SUBDOMAIN')}.herokuapp.com/webhooks/products_update", format: "json"},
   ]
