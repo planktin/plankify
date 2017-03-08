@@ -1,0 +1,39 @@
+{
+  "name": "plankify",
+  "description": "app config for heroku review apps",
+  "scripts": {
+  },
+  "env": {
+    "LANG": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    },
+    "SHOPIFY_CLIENT_API_KEY": {
+      "required": true
+    },
+    "SHOPIFY_CLIENT_API_SECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
