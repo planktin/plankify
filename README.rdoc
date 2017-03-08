@@ -4,17 +4,17 @@
 
 == GitHub / Heroku
 * master branch
-  => production ready
-  => connects to plankify (production)
-  => connects to plankify-staging (staging)
+  ** production ready
+  ** connects to plankify (production)
+  ** connects to plankify-staging (staging)
 
 == Heroku Pipeline
 * Production
-  => NO AUTOMATIC DEPLOY (we'll promote through pipeline)
+  ** NO AUTOMATIC DEPLOY (we'll promote through pipeline)
 * Staging
-  => Automatic Deploy (from master branch)
+  ** Automatic Deploy (from master branch)
 * Review-App
-  => Created thru PR
+  ** Created thru PR
 
 == Deploy Flow
 Subject to change...
