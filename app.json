@@ -7,6 +7,9 @@
     "LANG": {
       "required": true
     },
+    "APP_SUBDOMAIN": {
+      "required": true
+    },
     "RACK_ENV": {
       "required": true
     },

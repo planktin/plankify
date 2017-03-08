@@ -6,6 +6,6 @@ ShopifyApp.configure do |config|
   config.embedded_app = true
 
   config.webhooks = [
-    {topic: "products/update", address: "https://#{ENV.fetch('HEROKU_APP_NAME')}.herokuapp.com/webhooks/products_update", format: "json"},
+    {topic: "products/update", address: "https://#{ENV.fetch('APP_SUBDOMAIN')}.herokuapp.com/webhooks/products_update", format: "json"},
   ]
 end
