@@ -1,3 +1,35 @@
+== Heroku / Shopify
+* plankify.herokuapp.com <-> mystore.myshopify.com
+* plankify-staging.herokuapp.com <-> mystore-staging.myshopify.com
+
+== GitHub / Heroku
+* master branch
+  => production ready
+  => connects to plankify (production)
+  => connects to plankify-staging (staging)
+
+== Heroku Pipeline
+* Production
+  => NO AUTOMATIC DEPLOY (we'll promote through pipeline)
+* Staging
+  => Automatic Deploy (from master branch)
+* Review-App
+  => Created thru PR
+
+== Deploy Flow
+Subject to change...
+
+* Pull from Master
+* Create branch (my_feature)
+* Dev, test, push to GitHub
+* Open PR (my_feature -> master)
+* Review-App auto generated
+* Test Review App
+* Accept PR and Merge (my_feature -> master)
+* Heroku Auto-Deploy to plankify-staging
+* Test Staging App
+* Promote to Production
+
 == README
 
 This README would normally document whatever steps are necessary to get the
